@@ -1,43 +1,163 @@
-#SistemaCadastro - App de Cadastro de Usuários
+# 📱 SistemaCadastro - App de Cadastro de Usuários
 
-##Descrição do Projeto
-O SistemaCadastro é um aplicativo Android simples para gerenciar o cadastro de usuários. O app permite registrar nome, endereço e telefone de cada usuário e navegar entre a tela principal, o formulário de cadastro e a listagem de registros.
+## 📖 Descrição do Projeto
 
-##Interface do Aplicativo
-Adicione aqui os prints da sua interface.
+O **SistemaCadastro** é um aplicativo Android desenvolvido em Java para gerenciamento simples de usuários cadastrados.
 
-##Regras de Negócio
-Cada registro contém nome, endereço e telefone.
-O usuário deve confirmar antes de salvar um novo cadastro.
-A listagem exibe os registros na ordem de cadastro.
-A navegação permite voltar ao menu principal a qualquer momento.
-Se não houver registros cadastrados, a listagem exibe um aviso.
-Os dados são mantidos em memória apenas enquanto o app estiver aberto.
-##Tecnologias
-Linguagem: Java
-Interface: XML
-Android SDK: compileSdk 36, minSdk 24, targetSdk 36
-###Ferramenta: Android Studio
-###Bibliotecas: AndroidX AppCompat, Material Components, Activity, ConstraintLayout
-##Funcionalidades
-Cadastro de novos usuários com nome, telefone e endereço.
-Confirmação de cadastro com diálogo de alerta.
-Navegação entre tela principal, cadastro e listagem.
-Exibição de registros com botões "Anterior" e "Próximo".
-Contador de registros exibindo a posição atual.
-Retorno ao menu principal a partir da listagem.
-##Estrutura do Projeto
-MainActivity.java: gerencia a lista de registros e navegação entre telas.
-Registro.java: modelo de dados do usuário.
-TelaPrincipal.java: menu inicial com botões para cadastro e listagem.
-TelaCadastroUsuario.java: formulário de cadastro de usuários.
-TelaListagemUsuario.java: exibe registros cadastrados com navegação.
-#Uso
-Abra o aplicativo.
-Toque em "Cadastrar Usuário" para inserir um novo registro.
-Preencha nome, telefone e endereço.
-Confirme o cadastro.
-Use "Listar Usuários Cadastrados" para ver os registros existentes.
-##Observações
-Este projeto não possui persistência de dados em disco ou banco de dados.
-Todos os registros são armazenados apenas enquanto o app estiver em execução.
+O aplicativo permite:
+
+- ✅ Cadastrar usuários
+- ✅ Visualizar registros cadastrados
+- ✅ Navegar entre telas
+- ✅ Confirmar ações antes do salvamento
+
+Cada usuário possui:
+
+- 👤 Nome
+- 📍 Endereço
+- 📞 Telefone
+
+---
+
+# 🖼️ Interface do Aplicativo
+
+> Adicione aqui os prints/screenshots do aplicativo.
+
+Exemplo:
+
+```md
+![Tela Principal](imagens/tela-principal.png)
+![Tela Cadastro](imagens/tela-cadastro.png)
+![Tela Listagem](imagens/tela-listagem.png)
+```
+
+---
+
+# ⚙️ Regras de Negócio
+
+- Cada registro deve conter:
+  - Nome
+  - Endereço
+  - Telefone
+
+- O usuário deve confirmar antes de salvar um cadastro.
+
+- A listagem exibe os registros na ordem em que foram cadastrados.
+
+- É possível retornar ao menu principal a qualquer momento.
+
+- Caso não existam registros cadastrados, o sistema exibe uma mensagem de aviso.
+
+- Os dados permanecem armazenados apenas enquanto o aplicativo estiver aberto.
+
+---
+
+# 🛠️ Tecnologias Utilizadas
+
+## 💻 Linguagem
+
+- Java
+
+## 🎨 Interface
+
+- XML
+
+## 📱 Android SDK
+
+| Configuração | Versão |
+|---|---|
+| compileSdk | 36 |
+| minSdk | 24 |
+| targetSdk | 36 |
+
+---
+
+# 🧰 Ferramentas
+
+- Android Studio
+
+---
+
+# 📚 Bibliotecas Utilizadas
+
+- AndroidX AppCompat
+- Material Components
+- Android Activity
+- ConstraintLayout
+
+---
+
+# ✨ Funcionalidades
+
+- 📌 Cadastro de usuários
+- 📌 Navegação entre telas
+- 📌 Confirmação de cadastro com AlertDialog
+- 📌 Listagem de usuários cadastrados
+- 📌 Navegação entre registros com:
+  - Botão **Anterior**
+  - Botão **Próximo**
+- 📌 Contador de registros
+- 📌 Retorno ao menu principal
+
+---
+
+# 📂 Estrutura do Projeto
+
+```bash
+📦 SistemaCadastro
+ ┣ 📂 java
+ ┃ ┣ 📜 MainActivity.java
+ ┃ ┣ 📜 Registro.java
+ ┃ ┣ 📜 TelaPrincipal.java
+ ┃ ┣ 📜 TelaCadastroUsuario.java
+ ┃ ┗ 📜 TelaListagemUsuario.java
+ ┃
+ ┣ 📂 res
+ ┃ ┣ 📂 layout
+ ┃ ┣ 📂 drawable
+ ┃ ┗ 📂 values
+ ┃
+ ┗ 📜 AndroidManifest.xml
+```
+
+---
+
+# 📄 Descrição das Classes
+
+| Classe | Função |
+|---|---|
+| `MainActivity.java` | Gerencia registros e navegação |
+| `Registro.java` | Modelo de dados do usuário |
+| `TelaPrincipal.java` | Tela inicial do aplicativo |
+| `TelaCadastroUsuario.java` | Formulário de cadastro |
+| `TelaListagemUsuario.java` | Exibe os registros cadastrados |
+
+---
+
+# 🚀 Como Usar
+
+1. Abra o aplicativo
+2. Toque em **Cadastrar Usuário**
+3. Preencha:
+   - Nome
+   - Telefone
+   - Endereço
+4. Confirme o cadastro
+5. Acesse **Listar Usuários Cadastrados**
+6. Navegue entre os registros
+
+---
+
+# ⚠️ Observações
+
+> Este projeto não possui persistência em banco de dados ou armazenamento interno.
+
+Todos os registros permanecem disponíveis apenas enquanto o aplicativo estiver em execução.
+
+---
+
+# 👨‍💻 Autor
+
+Projeto desenvolvido para fins acadêmicos e aprendizado em desenvolvimento Android com Java.
+
+```
