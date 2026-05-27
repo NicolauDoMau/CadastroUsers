@@ -1,4 +1,5 @@
 #SistemaCadastro - App de Cadastro de Usuários
+
 ##Descrição do Projeto
 O SistemaCadastro é um aplicativo Android simples para gerenciar o cadastro de usuários. O app permite registrar nome, endereço e telefone de cada usuário e navegar entre a tela principal, o formulário de cadastro e a listagem de registros.
 
